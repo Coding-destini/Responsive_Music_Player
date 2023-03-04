@@ -1,0 +1,521 @@
+/* hide scrollbar but allow scrolling */
+.remove-bar {
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}
+
+.remove-bar::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+
+:root {
+    --theme-color: rgb(24, 24, 29);
+    --text-color: white;
+    --text-muted-color: rgb(172, 169, 169);
+}
+
+body {
+    background-color: black;
+}
+
+/* Mobile  Start*/
+
+/* Brand-name section start */
+
+.brand-name {
+    margin: 1.2rem;
+}
+
+.icons {
+    margin: 0.5rem;
+    margin-top: 2rem;
+}
+
+.extra-space {
+    display: none;
+}
+.user-name{
+    display: flex; align-items: center; margin-left: -1rem;
+}
+.user-name h5 {
+    display: none;
+}
+
+.header-home a {
+    display: none;
+}
+
+.header-music a {
+    display: none;
+}
+
+.header-account a {
+    display: none;
+    border-radius: 10px; background-color: rgb(72, 72, 72);
+}
+.header-account{
+    width:100%; 
+    max-width: 99.2px;
+}
+.header-account img{
+    border-radius: 10px;
+}
+
+.poster-list #p{
+    transition: ease-in-out 0.5s;
+}
+.poster-list #p:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
+/* Brand-name section end */
+
+
+/* Search section  Start*/
+.carousel {
+    display: none;
+}
+
+.heading-poster {
+    display: none;
+}
+
+.search-btn {
+    margin-top: 0;
+    margin: 0.3rem 2rem 2rem;
+}
+
+.has-search .form-control {
+    border: 2px black dotted;
+    border-radius: 10px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding: 1rem 2.375rem 1rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: rgb(229, 225, 225);
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+}
+
+.feel{
+    font-size: 4rem;
+}
+.trend{
+font-size: 2rem;
+}
+.Camila{
+    font-size: 1rem;
+}
+.Plays{
+    font-size: 1rem;
+}
+.listen{
+    font-size: 1rem;
+}
+.heart{
+    font-size: 1rem;
+}
+/* Search section  End*/
+
+
+
+/* horizontal-list Start */
+div.horizontal-list {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.horizontal-list a {
+    display: inline-block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* horizontal-list End */
+
+
+
+
+/* playlist-horizontal-scroll Start  */
+
+.poster-list {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.poster-list a img {
+    border-radius: 1rem;
+    max-width: 230.22px;
+
+}
+
+.poster-list a {
+    display: inline-block;
+    color: var(--text-color);
+    /* text-align: center; */
+    /* padding: 5px; */
+    text-decoration: none;
+    /* font-weight:800; */
+    line-height: 0;
+    margin: 0.4rem;
+
+}
+
+/* playlist-horizontal-scroll End  */
+
+
+/* favorite-list Verticle-scroll Start  */
+.favorite-list {
+    height: 14rem;
+    overflow-y: scroll;
+}
+
+.favorite-list .f-image {
+    border: 1px dotted black;
+    margin-bottom: 1rem;
+
+}
+
+.favorite-list .heart {
+    display: flex;
+    align-items: center;
+}
+
+.favorite-list .f-image {
+    border: 1px dotted black;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.favorite-list .f-image span {
+    line-height: 0;
+    font-weight: 700;
+    color: var(--text-muted-color);
+}
+
+.favorite-list .f-image h5 {
+    font-size: 1.1rem;
+}
+
+.favorite-list .f-image p {
+    font-size: 0.8rem;
+}
+
+
+
+.favorite-list .f-image img {
+    border-radius: 10px;
+    width: 20%;
+    max-width: 80.8px;
+}
+
+
+/* favorite-list Verticle-scroll End  */
+
+
+/* Main Palyer  Start  */
+.desktop-main-player {
+    display: none;
+}
+
+.desktop-m-player {
+    display: none
+}
+
+.main-player {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: black;
+
+}
+
+.main-player a {
+    color: var(--text-color);
+}
+
+/* Main Palyer  End  */
+
+/* Mobile  End*/
+
+/* large phone */
+@media only screen and (min-width: 433px) {
+.main-player{
+    margin-top: -1%;
+    background-color: black;
+}
+}
+@media only screen and (min-width: 575px) {
+    .main-player{
+        margin-top: -7%;
+    }
+    }
+
+/* tablet start  */
+@media only screen and (min-width: 660px) {
+
+    .favorite-list .f-image h5 {
+        font-size: 1.5em;
+    }
+
+    .favorite-list .f-image {
+
+        display: flex;
+        align-items: center;
+    }
+
+    .favorite-list .f-image p {
+        font-size: 1em;
+    }
+
+    div.horizontal-list {
+        text-align: center;
+    }
+
+    .favorite-list .heart {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+
+    .main-player {
+        display: none;
+    }
+
+    .header-home a {
+        display: block;
+        color: var(--text-color);
+    }
+
+    .header-music a {
+        color: var(--text-color);
+        display: block;
+    }
+
+    .header-account a {
+        display: block;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .extra-space {
+        display: none;
+    }
+
+}
+
+/* tablet end  */
+
+/* Desktop-mode start */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: black
+    }
+  
+    .header-music .fa-music{
+        display: none
+    }
+    .user-name {
+        display: block;
+        
+    }
+    .user-name h5{
+        display: flex;
+    }
+    .search-btn {
+        display: none;
+    }
+
+    .carousel {
+        display: block;
+    }
+
+    .carousel img {
+        height: 50%;
+    }
+
+    .extra-space {
+        display: block;
+    }
+
+    .user-name h5 {
+        display: block;
+    }
+
+    .heading-poster {
+        display: block;
+        position: absolute;
+        margin-top: -28%;
+    }
+
+    .poster-list img {
+        width: 10rem;
+    }
+
+    /* Favorite Desktop Section start  */
+
+    .favorite-list {
+        width: 499px;
+        height: 139px;
+        overflow-y: scroll;
+    }
+
+    .favorite-list .f-image span {
+        font-size: 0.8rem;
+    }
+
+    .horizontal-list {
+        display: none;
+    }
+
+    /* Favorite Desktop Sectio End  */
+    .desktop-main-player {
+        display: block;
+        width: 499px;
+    }
+
+    .desktop-main-player img {
+        border-radius: 10px;
+
+    }
+
+    /* desktop-m-player */
+    .desktop-m-player {
+        display: block;
+    }
+
+    .circle-image img {
+        width: 8%;
+        ;
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+        margin-top: 1%;
+    }
+
+    .circle-image img {
+        animation: ab 4s linear 0s infinite;
+
+    }
+
+    @keyframes ab {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .card {
+        margin-top: 15%;
+        border: none;
+
+    }
+
+    .card .controls a {
+        color: var(--text-color);
+        font-size: 1.5rem;
+    }
+
+    .card .controls {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+/* Desktop-mode End  */
+
+
+
+/* Big screen Start  */
+@media only screen and (min-width: 1230px) {
+    .poster-list {
+        position: relative;
+        margin-top: -5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1381px) {
+    .poster-list {
+        position: relative;
+        margin-top: -8rem;
+    }
+
+    .desktop-m-player {
+        margin-top: -2rem;
+    }
+
+    .circle-image img {
+        width: 6%;
+        margin-top: 2%;
+    }
+
+    #title {
+        margin-top: 17%;
+    }
+
+    .card {
+        margin-top: 12%;
+        border: none;
+    }
+    
+    .feel{
+        font-size: 4.3rem;
+    }
+    .heart{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1590px) {
+    .card {
+        margin-top: 15%;
+        border: none;
+    }
+
+    .circle-image img {
+        width: 7%;
+        margin-top: 3%;
+    }
+  .heading-poster  .Feelings b{
+        font-size: 0rem;
+    }
+
+
+}
+
+/* Big Screen End  */
+
+

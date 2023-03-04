@@ -1,0 +1,64 @@
+@keyframes quiet {
+    25%{
+      transform: scaleY(.6);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.8);
+    }
+  }
+  
+  @keyframes normal {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.6);
+    }
+  }
+  @keyframes loud {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(1.2);
+    }
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    background: black;
+    margin: 0;padding: 0;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  .music-controls a i{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+    font-size: 1.5rem;
+  }
+
+
+
+.main-player {
+position: absolute;
+z-index: 5;
+margin-top: 30rem;
+width: 100%;
+}
+.main-player a{
+    margin-left: 13%;
+    font-size: 1.9rem;
+    color: white;
+}

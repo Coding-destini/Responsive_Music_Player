@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body class="remove-bar">
+  <div class="container-fluid  mb-1 ">
+    <div class="row">
+
+      <!-- Header #############  Start-->
+      <div class="col-9  col-sm-6 col-lg-5 ">
+        <div class="brand-name">
+          <h1 style="color: var(--text-color);">
+            <i class="fa-solid fa-feather px-2"></i><b>Feather Music</b>
+          </h1>
+          <p style="   color: var(--text-muted-color);"><b>What do you feel like today?</b></p>
+        </div>
+      </div>
+      <div class="col-lg-1 extra-space "></div>
+      <!--header icons  -->
+      <div class="col-3 col-sm-6 col-lg-6 ">
+        <div class=" row icons text-center fs-3" style="color: var(--text-color);">
+          <div class="col-6 col-sm-2 library "><i class="fa-regular fa-bookmark"></i></div>
+          <div class="col-6 col-sm-2 library "><i class="fa-solid fa-gear"></i></div>
+
+          <!-- icons-for-tab  -->
+          <div class="header-home col-sm-2">
+            <a href="#home"><i class="fa-solid fa-house"></i></a>
+          </div>
+          <div class="header-music col-sm-2">
+            <a href="/assets/music.html"><i class="fa-solid fa-music"></i></i></a>
+          </div>
+        
+          <div class="header-account account d-flex col-sm-2">
+            <a href="">
+              <img src="../assets/images/User-picture.jpg" alt="" width="100%">
+            </a>
+          </div>
+          <div class="user-name col-lg-1">
+            <h5><b>Coding Destini</b></h5>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- .serach btn  -->
+    <div class="col-12 ">
+
+      <!-- Carousel start  -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/images/Heading_poster_2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/Heading_poster_1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/Heading_poster_3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End  -->
+
+    <!-- Heading Start -->
+    <div class=" heading-poster row  w-75   text-light">
+      <div class="col-lg-8  p-4">
+        <p class="trend"><b>Trending New Hits</b></p>
+        <p class="mx-4 mb-0 feel"><b>In My Feelings</b></p>
+        <p class="mx-4 Camila"><b>Camila Cabilo</b> <b class="text-secondary mx-4 fw-1 Plays">63Million Plays</b> </p>
+        <div class="link_listen mt-4">
+          <button type="button" class="btn btn-primary fw-bold listen " style="-radius: 20px;">Listen now</button>
+          <span class="text-danger mx-3 heart"><i class="fa-solid fa-heart"></i></span>
+        </div>
+      </div>
+   
+    </div>
+    <!-- Heading End  -->
+    <div class="search-btn">
+      <div class="search">
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search songs, playlist, artist">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header ############# END -->
+
+
+  <!-- main ########  -->
+  <!-- Horizontal List start -->
+  <div class="col-12 ">
+    <div class="horizontal-list remove-bar">
+      <a href="#Recent" style="color: rgb(0, 136, 255);">Recent</a>
+      <a href="#Top 50">Top 50</a>
+      <a href="#Chill">Chill</a>
+      <a href="#R&B">R&B</a>
+      <a href="#Festival">Festival</a>
+      <a href="#Artist">Artist</a>
+    </div>
+  </div>
+  <!-- Horizontal List end -->
+
+  <!-- Poster Start Horizontal  -->
+  <div class="col-sm-12">
+    <div class="poster-list remove-bar ">
+      <div class="poster w-50 mx-3">
+        <a href="#poster-1">
+          <img src="../assets/images/Wednesday.jpg" id="p" alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" mt-3 fs-5"><b>Wednesday</b></h3>
+          <p style="color: var(--text-muted-color)" class="fs-6"><b>2023-album</b></p>
+        </a>
+
+        <a href="#poster-2">
+          <img src="../assets/images/Rockby.jpg" id="p"alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" mt-3 fs-5"><b>Rockby</b></h3>
+          <p style="color: var(--text-muted-color)" class="fs-6"><b>2021-album</b></p>
+        </a>
+
+        <a href="#poster-3">
+          <img src="../assets/images/DanceMonkey.jpg" id="p"alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" mt-3 fs-5"><b>Dance Monkey</b></h3>
+          <p style="color: var(--text-muted-color)" class="fs-6"><b>2022-album</b></p>
+        </a>
+
+        <a href="#poster-4">
+          <img src="../assets/images/LetMeLoveYou.jpg" id="p"alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" fs-5 mt-3 "><b>Let me love you</b></h3>
+          <p style="color: var(--text-muted-color)" class=" fs-6"><b>2020-album</b></p>
+        </a>
+
+        <a href="#poster-5">
+          <img src="../assets/images/Friends.jpg"
+          id="p" alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" fs-5 mt-3 "><b>Friends Marsh</b></h3>
+          <p style="color: var(--text-muted-color)" class=" fs-6"><b>2020-album</b></p>
+        </a>
+
+        <a href="#poster-2">
+          <img src="../assets/images/GirlsLikeYou.jpg" id="p" alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" mt-3 fs-5"><b>Girls like you</b></h3>
+          <p style="color: var(--text-muted-color)" class="fs-6"><b>2019-album</b></p>
+        </a>
+
+        <a href="#poster-2">
+          <img src="../assets/images/WithoutMe.jpg" alt="" id="p" width="100%">
+          <h3 style="color: var(--text-color);" class=" mt-3 fs-5"><b>Without me</b></h3>
+          <p style="color: var(--text-muted-color)" class="fs-6"><b>2018-album</b></p>
+        </a>
+        <a href="#poster-2">
+          <img src="../assets/images/LetMeDown.jpg" id="p"alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" mt-3 fs-5"><b>Let me down </b></h3>
+          <p style="color: var(--text-muted-color)" class="fs-6"><b>2014-album</b></p>
+        </a>
+        
+
+
+        <a href="#poster-4">
+          <img src="../assets/images/LetMeLoveYou.jpg" id="p"alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" fs-5 mt-3 "><b>Let me love you</b></h3>
+          <p style="color: var(--text-muted-color)" class=" fs-6"><b>2020-album</b></p>
+        </a>
+
+        <a href="#poster-5">
+          <img src="../assets/images/Friends.jpg"
+          id="p" alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" fs-5 mt-3 "><b>Friends Marsh</b></h3>
+          <p style="color: var(--text-muted-color)" class=" fs-6"><b>2020-album</b></p>
+        </a>
+
+        <a href="#poster-2">
+          <img src="../assets/images/GirlsLikeYou.jpg" id="p" alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" mt-3 fs-5"><b>Girls like you</b></h3>
+          <p style="color: var(--text-muted-color)" class="fs-6"><b>2019-album</b></p>
+        </a>
+
+        <a href="#poster-2">
+          <img src="../assets/images/WithoutMe.jpg" alt="" id="p" width="100%">
+          <h3 style="color: var(--text-color);" class=" mt-3 fs-5"><b>Without me</b></h3>
+          <p style="color: var(--text-muted-color)" class="fs-6"><b>2018-album</b></p>
+        </a>
+        <a href="#poster-2">
+          <img src="../assets/images/LetMeDown.jpg" id="p"alt="" width="100%">
+          <h3 style="color: var(--text-color);" class=" mt-3 fs-5"><b>Let me down </b></h3>
+          <p style="color: var(--text-muted-color)" class="fs-6"><b>2014-album</b></p>
+        </a>
+        
+
+      </div>
+    </div>
+  </div>
+  <!-- Poster End Horizontal  -->
+
+
+
+  <!-- favorite list start  -->
+  <div class="col-12 ">
+    <div class="row mx-3">
+    <div class="favorites col-lg-6 ">
+      <h3 style="color: var(--text-color);">Your favorites
+        <span class="heart mx-3 text-danger"><i class="fa-solid fa-heart"></i></i></i></span>
+      </h3>
+
+      <div class="favorite-list w-100 remove-bar">
+        <!-- favorite list 1  -->
+        <div class="l1 f-image d-flex">
+          <img src="../assets/images/PreetyGirls.jpg" id="p9" alt="">
+          <span>
+            <h5 style="  color: var(--text-color);">Preety Girls </h5>
+
+            <p>Maggie Lindemann</p>
+          </span>
+          <p style="color: var(--text-muted-color)">3:05</p>
+          <span class="heart"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <!-- favorite list 2  -->
+        <div class="l2 f-image d-flex">
+          <img src="../assets/images/Senorita.jpg" id="p10" alt="">
+          <span>
+            <h5 style="color: var(--text-color);">Senorita</h5>
+            <p>Camila Cabello </p>
+          </span>
+          <p style="color: var(--text-muted-color)">3:05</p>
+          <span class="heart"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <!-- favorite list 3  -->
+        <div class="l3 f-image d-flex">
+          <img src="../assets/images/SiaChipThrills.jpg" id="p11" alt="">
+          <span>
+            <h5 style="color: var(--text-color);">Sia Chip Thrills</h5>
+            <p>Sia</p>
+          </span>
+          <p style="color: var(--text-muted-color)">3:05</p>
+          <span class="heart"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <!-- favorite list 4  -->
+        <div class="l4 f-image d-flex">
+          <img src="../assets/images/Unstopable.jpg"id="p12" alt="">
+          <span>
+            <h5 style="color: var(--text-color);">Unstoppable</h5>
+            <p>Sia</p>
+          </span>
+          <p style="color: var(--text-muted-color)">3:05</p>
+          <span class="heart"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <!-- favorite list 5  -->
+        <div class="l5 f-image d-flex">
+          <img src="../assets/images/Sorry.jpg"id="p13" alt="">
+          <span>
+            <h5 style="color: var(--text-color);">Sorry</h5>
+            <p>Justin Bieber</p>
+          </span>
+          <p style="color: var(--text-muted-color)">3:05</p>
+          <span class="heart"><i class="fa-regular fa-heart"></i></i></span>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- desktop Music Player Start  -->
+<div class="col-lg-6 desktop-m-player">
+  <div class="circle-image" >
+<img src="./assets/images/main-player.jpg" alt="" width="100%" id="cover">
+  </div>
+  <div class=" text-light" style="margin-left: 10%; margin-top: 2%; position: absolute;"><h3 id="title"><b>Music Name</b></h3>
+
+<!-- music Start -->
+<audio src="./assets/music/DanceMonkey.mp3" id="audio"></audio>
+<!-- music End -->
+
+
+<div class="boxContainer position-absolute">
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+  <div class="box box5"></div>
+</div> 
+  </div>
+
+
+  <div class="card mx-5 " style="width: 90%;" id="card">
+  <div class="card-body controls bg-dark">
+    <a href="#Random-track" ><i class="fas fa-random" title="random" ></i></a>
+      <a href="#backward" id="prev"><i  class=" fa-solid fa-backward"></i></a>
+      <a href="#play"id="play"><i  class="fas fa-solid fa-play"></i></a>
+      <a href="#forward"id="next" ><i  class="fa-solid fa-forward action-btn action-btn-big"></i></a>
+      <a href="#repeat" ><i class="fa fa-repeat" title="repeat"></i></i></a>
+  </div>
+</div></div>
+   
+
+    <!-- desktop Music Player End  -->
+    </div>
+  </div>
+  <!-- favorite list end  -->
+
+  <!-- Main Player  Start -->
+  <div class="col-12 col-lg-6 position-fixed">
+    <div class="main-player  ">
+      <a href="#home"><i class="fa-solid fa-house text-muted"></i></a>
+      <a href="#search"><i class="fa-solid fa-magnifying-glass text-muted"></i></i></a>
+      <a href="./assets/music.html"><i class="fa-solid fa-music"></i></i></a>
+      <a href="#account"><i class="fa-solid fa-user text-muted"></i></i></a>
+    </div>
+  </div>
+  <!-- Main Player End  -->
+  </div>
+  </div>
+
+  <script src="/assets/script.js"></script>
+  <script src="https://kit.fontawesome.com/e2c02d027c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
